@@ -1,12 +1,12 @@
-Estudos, exemplos, meu primeiros projetos.
+Estudos, exemplos, meus primeiros projetos.
 
 TECNOLOGIAS E LINKS ÚTEIS:
-
-
-
+<br>
+<br>
+<br>
+-------------------------------------------------------
 TECNOLOGIAS
 -------------------------------------------------------
-
 VUE JS<br>
 PYTHON (Pycharm, Spyder?)<br>
 PIP (sistema de gerenciamento de pacotes) - normalmente vem junto com o Python... se não funcionar, pode ser por causa das "variáveis de ambiente" (executar comando py -m pip install --upgrade pip)<br>
@@ -31,9 +31,9 @@ Hadcore: framework Delphi para desenvolvimento Web (um tipo de evolução do Uni
 <br>
 <br>
 <br>
--------------------------------------------------------<br>
-LINKS E TUTORIAIS<br>
--------------------------------------------------------<br>
+-------------------------------------------------------
+LINKS E TUTORIAIS
+-------------------------------------------------------
 PostgreSQL:<br>
 <br>
 https://www.postgresqltutorial.com/<br>
