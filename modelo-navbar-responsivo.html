@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			/*	ALINHAMENTO
+			
+				align-self
+				justify-content: alinha na horizontal (funciona no flex-box)
+				align-items: alinha na vertical (funciona no flex-box)
+				text-align
+				vertical-align
+				float: para alinhar uma imagem, para alinhar os itens de uma lista (pode ser usada junto com "clear")
+			*/
+		
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			#principal {
+				display: flex;
+				/* Faz as colunas se deslocarem para baixo quando o tamanho da viewport fica menor */
+				flex-wrap: wrap;
+				height: 80px;
+				/* Mantém as colunas centralizadas na horizontal quando o tamanho da viewport fica menor */
+				justify-content: center;
+			}
+			
+			div {
+				border: solid black 1px;
+			}
+			
+			#col1 {
+				display: flex; 
+				flex: 150px;
+				background-color: #f5e4ae;
+				/* pode-se usar para certificar-se de que os elementos dentro ficarão alinhados à esquerda, apesar desse ser o default */
+				justify-content: left;
+				align-items: center;
+				height: inherit;
+			}
+			#col2 {
+				display: flex;
+				flex-wrap: wrap;
+				background-color: bisque;
+				align-items: center;
+				justify-content: center;
+			}
+			#col3 {
+				display: flex;
+				height: inherit;
+				justify-content: center;
+				align-items: center;
+				width: 150px;
+				background-color: Tomato;
+			}
+			#col1A {
+				display: flex;
+				width: 80px;
+				height: inherit;
+				background-color: aquamarine;
+				justify-content: center;
+				align-items: center;
+			}
+			#col2 > a {
+				background-color: green;
+				line-height: 2em;
+				margin: 1.3em;
+			}
+			
+			@media screen and (max-width: 500px) {
+			  #col1 {
+				justify-content: center;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<div id="principal">
+			<div id="col1" class="colunas">
+				<div id="col1A" class="colunas">Sua logo</div>
+			</div>
+			<div id="col2" class="colunas">
+				<a href="">Instale</a>
+				<a href="">Aprenda</a>
+				<a href="">Playground</a>
+				<a href="">Ferramentas</a>
+				<a href="">Governança</a>
+				<a href="">Comunidade</a>
+				<a href="">Blog</a>
+			</div>
+			<div id="col3" class="colunas">
+				<select>
+					<option>Português (BR)</option>
+					<!-- Definindo uma opção pré-selecionada no "combobox" -->
+					<option selected>English</option>
+					<option>Español</option>
+				</select>
+			</div>
+		</div>
+	</body>
+</html>
