@@ -1,1 +1,99 @@
-# learning
+Estudos, exemplos, meu primeiros projetos.
+
+TECNOLOGIAS E LINKS ÚTEIS:
+
+
+
+TECNOLOGIAS
+-------------------------------------------------------
+
+VUE JS
+PYTHON (Pycharm, Spyder?)
+PIP (sistema de gerenciamento de pacotes) - normalmente vem junto com o Python... se não funcionar, pode ser por causa das "variáveis de ambiente" (executar comando py -m pip install --upgrade pip)
+ORM - SqlAlchemy (Python)
+Git - Github
+PostgreSQL (PgAdmin, Beekeeper studio)
+Visual Studio Code
+Django: framework para usar Python com HTML
+Figma: para design web (https://ebaconline.com.br/blog/o-que-e-figma-e-como-usar)
+Flask: framework para desenvolver API no Python, para interagir com Web
+Babel: compilador javascript online
+Fiddle: compilador HTML/CSS/JS online
+Codeopen: compilador HTML/CSS/JS online
+Jinja2: templates HTML (permite estruturas de repetição no HTML e trabalha junto com o Flask)
+Virtualenv: para criar ambientes virtuais do Python
+Cx_Freeze, py2exe ou pyinstaller: criar executável do projeto Python
+Limitless (template de sistema web): https://preview.themeforest.net/item/limitless-responsive-web-application-kit/full_screen_preview/13080328?_ga=2.158033144.336182259.1705410499-1047531608.1705410499&_gac=1.254436090.1705410499.CjwKCAiA75itBhA6EiwAkho9e9L24PC0ceMy0uFf10PzKBS0jZ9MjFh0le0f2BzgBpt9jG44FtydcBoCSEkQAvD_BwE
+Bootstrap: framework de CSS
+
+Unigui: framework Delphi para desenvolvimento Web
+Hadcore: framework Delphi para desenvolvimento Web (um tipo de evolução do Unigui)
+
+
+
+-------------------------------------------------------
+LINKS E TUTORIAIS
+-------------------------------------------------------
+PostgreSQL:
+
+https://www.postgresqltutorial.com/
+https://www.postgresqltutorial.com/postgresql-administration/postgresql-create-tablespace/
+https://www.postgresql.org/docs/current/datatype-numeric.html
+https://www.postgresql.org/docs/current/errcodes-appendix.html
+https://dirceuresende.com/blog/sql-server-como-filtrar-e-separar-o-numero-e-o-texto-de-uma-string/
+
+Python:
+
+https://www.devmedia.com.br/python-tutorial/33274
+https://dadosaocubo.com/manipulando-dados-em-postgresql-com-python/#google_vignette
+https://pythonhelp.wordpress.com/2012/11/27/armazenando-senhas-de-forma-segura/#:~:text=Uma%20forma%20recomendada%20de%20armazenar,demorado%20para%20gera%C3%A7%C3%A3o%20do%20hash.
+https://blog.geekhunter.com.br/django-introducao-ao-framework/
+https://www.geeksforgeeks.org/name-mangling-in-python/
+https://www.treinaweb.com.br/blog/criando-ambientes-virtuais-para-projetos-python-com-o-virtualenv
+https://realpython.com/api-integration-in-python/
+https://pt.stackoverflow.com/questions/342117/back-end-python-para-o-front-end
+https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6
+Ler planilha, identificar coordenadas do mouse e copiar e colar dados para a coordenada: https://www.youtube.com/watch?v=UtkPIpov6h8
+Montar ambiente virtual do Visual Studio: https://www.youtube.com/watch?v=m1TYpvIYm74
+Criar tela de login (com API... POST, GET, etc): https://community.revelo.com.br/aprenda-a-criar-telas-de-registro-e-login-de-usuarios-com-flask-e-firebase/
+Criar sistema web com Flask: https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3-pt
+Criar sistema web com Flask e subir na nuvem: https://www.freecodecamp.org/portuguese/news/como-criar-uma-aplicacao-da-web-usando-o-flask-e-implanta-la-na-nuvem/
+Tkinter (GUI): https://www.tabnews.com.br/ngomatec/interface-grafica-moderna-para-python-com-tkinter
+Criar executável: https://pypi.org/project/auto-py-to-exe/
+Usar planilhas do Google: https://www.twilio.com/pt-br/blog/manipular-planilhas-google-com-python
+Encaminhar mensagens wpp para vários contatos de uma vez: https://www.hashtagtreinamentos.com/freela-de-250-dolares-com-python
+
+HTML/CSS/JS:
+
+Tela de login resposiva: https://www.youtube.com/watch?v=GSjd-glAmBk
+https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Getting_started
+Python no HTML: https://community.revelo.com.br/aprenda-a-executar-um-codigo-python-em-um-arquivo-html/
+Abas: https://www.devmedia.com.br/criando-uma-estrutura-de-abas-com-html-css-e-jquery/24693
+https://developer.mozilla.org/pt-BR/docs/Learn/CSS/First_steps/Getting_started
+Quase tudo sobre cores: https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_colors/Applying_color
+https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data-pt
+https://jsfiddle.net/
+https://www.javascripttutorial.net/
+https://www.devmedia.com.br/guia/javascript/34372
+https://www.devmedia.com.br/javascript-tutorial/37257
+https://www.w3schools.com/js/js_examples.asp
+https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n
+CSS Grid (responsivo): https://triangulo.dev/posts/css-grid-o-que-voce-precisa-saber/
+CSS Grid (responsivo): https://www.freecodecamp.org/news/learn-css-grid-in-5-minutes-f582e87b1228
+CSS Grid (responsivo): https://www.freecodecamp.org/portuguese/news/como-tornar-seu-html-responsivo-adicionando-uma-unica-linha-de-css/
+Templates para inspiração: https://webflow.com/made-in-webflow?cloneable=true
+Vários exemplos legais de estilos em CSS: https://100dayscss.com/
+Exemplos de componentes para formulários: https://webflow.com/made-in-webflow/website/form-ui-kits
+Tags para twitter, etc: https://www.codigofonte.com.br/artigos/conheca-as-meta-tags-sociais-do-twitter-facebook-google-e-outras
+Unidades de medida em CSS: https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/
+
+Delphi:
+
+http://forums.unigui.com/index.php?/forum/14-sample-projects/
+http://forums.unigui.com/index.php?/topic/8298-screen-examples-of-youre-application-designs/page/9/
+https://www.unigui.com/
+https://www.youtube.com/watch?v=feVEDq7WTeQ&t=2409s
+https://www.youtube.com/watch?app=desktop&v=gNZbibIF55E
+https://www.unigui.com/resources/installation-instructions
+https://radcore.pro.br/web/help/pt/Pre-Requisitos.html
+https://radcore.pro.br/web/help/pt/NOVAVERSAOComoatualizar.html
