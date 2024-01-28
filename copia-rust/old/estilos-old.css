@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 12px;
+}
+
+body {
+	/* Pode-se usar um atalho: */
+	/* border: 1px solid black; */
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	padding: 0;
+	margin: 0;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+}
+
+nav {
+	/* Usar flex quando o elemento for unidimencional (só tiver uma linha ou uma coluna).
+	   Se for bidimencional, usar CSS Grid */
+	display: flex;
+	/* Determina que os elementos contidos em nav serão agrupados na mesma linha */
+	flex-wrap: wrap;
+	/* O padrão é "row" (linha), mas também é possível agrupar em coluna */
+	/* flex-direction: column; */
+	height: 80px;
+	/* Coloca margem somente à esquerda */
+	margin: 0 10px;
+}
+
+/* nav > a { */
+#logo-rust {
+	/* Os elementos "a" (que, no caso, é apenas 1) ocuparão 60px no "wrap" */
+	flex: 60px;
+	/* O link herda a altura do pai, que no caso é o nav */
+	height: inherit;
+	background-color: aquamarine;
+}
+
+/* nav > a > img { */
+#logo-rust-img {
+	/* A imagem do logo herda a altura do pai, que no caso é o link */
+	height: inherit;
+}
+
+/* nav > div { */
+.centralizado-vertical {
+	/* Alinha os links na vertical */
+	align-self: center;
+}
+
+.centralizado-vertical > a {
+	color: #2a3439;
+	line-height: 2em;
+	margin: 1.3em;
+	background-color: #ccb1c8;
+}
+
+.centralizado-vertical > select {
+	/* 1vw = 1% da largura da viewport */
+	width: 8vw;
+	font-size: 1.2rem;
+	padding: 0.15em;
+}

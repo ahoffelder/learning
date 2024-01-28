@@ -1,0 +1,149 @@
+/*	ALINHAMENTO
+
+    align-self
+    justify-content: alinha na horizontal
+    align-items: alinha na vertical
+    text-align
+    vertical-align
+    float: para alinhar uma imagem, para alinhar os itens de uma lista (pode ser usada junto com "clear")
+    
+    RESPONSIVIDADE
+    
+    display: flex (para elementos unidimencionais, ou seja, que têm somente linha ou somente coluna),
+                grid (para elementos bidimencionais, que precisam ser distribuídos em linhas e colunas, de diferentes tamanhos),
+                table (para elementos bidimencionais, que não precisam ser "distribuídos" ao reduzir o tamanho da viewport)
+*/
+
+/* ===================================================== */
+/*  GERAL
+/* ===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fira+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* determina que a borda e o "padding" estão contidos no tamanho do elemento */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
+	font-size: 1.1rem;
+    /* garante que o tamanho mínimo do conteúdo seja igual à altura da viewport */
+    min-height: 100vh;	
+}
+
+div, nav, header, main, footer {
+    /* aplicar borda aos elementos, para melhor visualização durante o desenvolvimento */
+    border: solid black 1px;
+}
+
+select {
+    height: 1.5rem;
+}
+
+/* ===================================================== */
+/*  NAVBAR
+/* ===================================================== */
+
+nav {
+    display: flex;
+    /* Faz as colunas se deslocarem para baixo quando o tamanho da viewport fica menor */
+    flex-wrap: wrap;
+    height: 80px;
+    /* Mantém as colunas centralizadas na horizontal quando o tamanho da viewport fica menor */
+    justify-content: center;
+}
+
+#logo-dv {
+    display: flex;
+    background-color: coral;
+    flex: 150px;
+    justify-content: left;
+	align-items: center;
+    height: inherit;
+	/* Faz as divs de "menu" e "idioma" ficarem com a largura da viewport ao serem 
+	   movidas para as "linhas" de baixo quando diminuimos o tamanho da tela */
+	flex-grow: 8;
+}
+
+#logo-dv > a {
+	height: inherit;
+	background-color: darkseagreen;
+    /* fica mais fácil de clicar se aumentamos um pouco a área "clicável" do link */
+    line-height: 2em;
+}
+
+#logo-dv > a > img {
+    /* alinhar as imagens à erquerda no elemento e de modo que o elemento se molde à altura da imagem */
+    float: left;
+	height: inherit;
+}
+
+#menu-dv {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+	/* Faz as divs de "menu" e "idioma" ficarem com a largura da viewport ao serem 
+	   movidas para as "linhas" de baixo quando diminuimos o tamanho da tela */
+	flex-grow: 1;
+}
+
+#menu-dv > a {
+    /* mantém um afastamento entre os links */
+    margin-inline: 1.5em;
+	margin-block: .5em;
+}
+
+#idioma-dv {
+    display: flex;
+    background-color: aquamarine;
+    width: 150px;
+    justify-content: center;
+    /* centraliza o "select" na vertical e também ajusta o tamanho dele */
+    align-items: center;
+    height: inherit;
+	/* Faz as divs de "menu" e "idioma" ficarem com a largura da viewport ao serem 
+	   movidas para as "linhas" de baixo quando diminuimos o tamanho da tela */
+	flex-grow: 1;
+}
+
+/* ===================================================== */
+/*  HEADER
+/* ===================================================== */
+
+header {
+    display: flex;
+    /* Faz as colunas se deslocarem para baixo quando o tamanho da viewport fica menor */
+    flex-wrap: wrap;
+    height: 370px;
+    /* Mantém as colunas centralizadas na horizontal quando o tamanho da viewport fica menor */
+    justify-content: center;
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: "Alfa Slab One", serif;
+    font-weight: normal;
+    line-height: 10rem;
+}
+
+#apresentacao-h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+#apresentacao-dv {
+    flex: 1;
+    padding-left: 390px;
+    padding-right: 50px;
+    /* alinha o div na vertical */
+    align-self: center;
+}
+
+#comece-dv {
+    width: 40vw;
+}
