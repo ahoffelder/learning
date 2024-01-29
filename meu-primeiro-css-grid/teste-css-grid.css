@@ -1,0 +1,150 @@
+.teste {
+	display: grid;
+	/* grid-template-columns: 50% 50%; */
+	grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+	padding: 10px;
+	gap: 10px;
+	border: 1px solid #4CAF50;	
+	justify-content: center; /* Centralizar o grid horizontalmente */
+	height: 95vh; /* Ocupa toda a tela */
+}
+
+
+/* Estilo para o grid como um todo */
+.wrapper {
+    display: grid;
+    /* grid-template-columns: 150px 1fr 2fr; */
+	grid-template-columns: 150px repeat(auto-fit, minmax(100px, 1fr));
+	/* grid-template-columns: 200px 50px 100px; */
+    /* grid-template-rows: 150px 50px 50px; */
+	grid-template-rows: 70% repeat(2,15%);
+	/* justify-content: center; */ /* Centralizar o grid horizontalmente */
+	align-self: center;
+	/* place-content: center; /* Faz o mesmo que justify-content e align-self ou align-content juntos */
+	gap: 10px;
+	border: 1px solid #4CAF50;
+	padding: 10px;
+	height: 90vh;
+	/* width: 50%;
+	place-self: end; */ /* alinha o conteúdo no final da coluna */
+}
+
+/* Estilo para todos os elementos dentro do grid */
+.wrapper > div {
+  display: flex;
+  align-items: center;   /* Centralizar verticalmente */
+  justify-content: center; /* Centralizar horizontalmente */
+  border: 1px solid #ddd;
+  color: white;
+  border: 1px solid #4CAF50;
+  /* font-weight: bold;
+  font-size: 20px;
+  font-family: arial, sans-serif; */  
+  font: bold 25px arial, sans-serif;
+}
+
+#wp1 {
+	background-color: #87deda;
+	grid-column-start: 1;
+	/* Aqui é o nr da "linha".
+	   Imagine que uma grid com 3 colunas tem 4 "linhas" (ou "traços") verticais que desenham essas colunas (pois contamos as "linhas" do início e do final).
+	   Então, para pegar as 3 colunas, a "linha" inicial (start) precisa ser 1 e a "linha" final (end) precisa ser 4 */
+    grid-column-end: 3;
+}
+
+#wp2 {
+	background-color: #ffb0d1;
+}
+
+#wp3 {
+	background-color: #b8d7ad;
+	grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#wp4 {
+	background-color: #ca7eba;
+	grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#wp5 {
+	background-color: #ffa165;
+}
+
+#wp6 {
+	background-color: #89b4fa;
+}
+
+
+
+ /* top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  altura necessária
+  height: 240px;
+  background: tomato;
+  padding: 20px; */
+  
+  
+/* Estilo para o grid como um todo */
+.box {
+    display: grid;
+	grid-template-columns: 3fr 1fr 2fr;
+	/* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    grid-template-rows: 150px 50px 50px;
+	justify-content: center; /* Centralizar o grid horizontalmente */
+	align-self: center;
+	gap: 10px;
+	border: 1px solid #4CAF50;
+	padding: 10px;
+	/* width: 50%; */
+}
+
+/* Estilo para todos os elementos dentro do grid */
+.box > div {
+  display: flex;
+  align-items: center;   /* Centralizar verticalmente */
+  justify-content: center; /* Centralizar horizontalmente */
+  border: 1px solid #ddd;
+  color: white;
+  border: 1px solid #4CAF50;
+  /* font-weight: bold;
+  font-size: 20px;
+  font-family: arial, sans-serif; */  
+  font: bold 25px arial, sans-serif;
+}
+
+#box1 {
+	background-color: #87deda;
+	grid-column-start: 1;
+	/* Aqui é o nr da "linha".
+	   Imagine que uma grid com 3 colunas tem 4 "linhas" (ou "traços") verticais que desenham essas colunas (pois contamos as "linhas" do início e do final).
+	   Então, para pegar as 3 colunas, a "linha" inicial (start) precisa ser 1 e a "linha" final (end) precisa ser 4 */
+    grid-column-end: 3;
+}
+
+#box2 {
+	background-color: #ffb0d1;
+}
+
+#box3 {
+	background-color: #b8d7ad;
+	grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#box4 {
+	background-color: #ca7eba;
+	grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#box5 {
+	background-color: #ffa165;
+}
+
+#box6 {
+	background-color: #89b4fa;
+}
