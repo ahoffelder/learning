@@ -1,0 +1,86 @@
+/*	ALINHAMENTO
+
+    align-self
+    justify-content: alinha na horizontal
+    align-items: alinha na vertical
+    text-align
+    vertical-align
+    float: para alinhar uma imagem, para alinhar os itens de uma lista (pode ser usada junto com "clear")
+    
+    RESPONSIVIDADE
+    
+    display: flex (para elementos unidimencionais, ou seja, que têm somente linha ou somente coluna),
+                grid (para elementos bidimencionais, que precisam ser distribuídos em linhas e colunas, de diferentes tamanhos),
+                table (para elementos bidimencionais, que não precisam ser "distribuídos" ao reduzir o tamanho da viewport)
+*/
+
+/* ------------ TEMPLATE - INÍCIO ------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* determina que a borda e o "padding" estão contidos no tamanho do elemento */
+    box-sizing: border-box;
+}
+
+body {
+    /* garante que o tamanho mínimo do conteúdo seja igual à altura da viewport */
+    min-height: 100vh;
+    /* o flex ajuda a empilhar os filhos (nav, header, main e footer) e também serve para empurrar o footer para o final da página quando usamos "flex: 1" no main */
+    display: flex;
+    flex-direction: column;
+}
+
+div, nav, header, main, footer {
+    /* aplicar borda aos elementos, para melhor visualização durante o desenvolvimento */
+    border: solid black 1px;
+}
+
+/* linha de "cabeçalho" ou de navegação */
+nav {
+    background-color: Tomato;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80px;
+    /* Mantém as colunas horinzontalmente centralizadas quando o tamanho da viewport fica menor */
+    justify-content: center;
+}
+
+header {
+    background-color: darkgrey;
+    height: 20vh;
+}
+
+main {
+    background-color: lightpink;
+    /* Faz o conteúdo principal (que está no main) ocupar todo o espaço vago na página e empurra o footer para o final */
+    flex: 1;
+}
+
+footer {
+    background-color: lightblue;
+    height: 250px;
+    
+    vertical-align: bottom;
+}
+
+div {
+    background-color: #f5e4ae;
+    /* assume a altura do elemento pai */
+    height: inherit;
+}
+
+img {
+    /* alinhar as imagens à erquerda no elemento e de modo que o elemento se molde à altura da imagem */
+    float: left;
+}
+
+a {
+    background-color: green;
+    /* fica mais fácil de clicar se aumentamos um pouco a área "clicável" do link */
+    line-height: 2em;
+    /* mantém um afastamento entre os links */
+    margin: 1.3em;
+}
+
+/* ------------ TEMPLATE - FIM ------------ */
