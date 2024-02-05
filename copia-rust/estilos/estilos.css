@@ -1,3 +1,11 @@
+/* =================================== */
+
+/* Este é meu primeiro site, então não investi muito na "estética" e organização do código (classes, etc).
+   O foco foi mais a funcionalidade (estilos, responsividade e experiência do usuário). */
+
+/* =================================== */
+
+
 /*	ALINHAMENTO
 
     align-self
@@ -15,9 +23,10 @@
 */
 
 /* ===================================================== */
-/*  GERAL
+/*  GERAL */
 /* ===================================================== */
 
+/* Usar fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fira+Sans&display=swap');
 
 * {
@@ -28,10 +37,11 @@
 }
 
 body {
+	/* a fonte entre parênteses indica que vem de um local externo (neste caso, do Google Fonts) */
     font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
 	font-size: 1.1rem;
     /* garante que o tamanho mínimo do conteúdo seja igual à altura da viewport */
-    min-height: 100vh;	
+    min-height: 100vh;
 }
 
 div, nav, header, main, footer {
@@ -39,19 +49,66 @@ div, nav, header, main, footer {
     border: solid black 1px;
 }
 
+section {
+    padding-top: 40px;
+}
+
 select {
     height: 1.5rem;
 }
 
+h1 {
+    font-size: 6rem;
+    font-family: "Alfa Slab One", serif;
+    font-weight: normal;
+	/* não usei o line-height porque o padding fica melhor em todos os tamanhos de tela,
+	   já que quando a tela é pequena o texto quebra linha e o line-height acaba afastando demais uma linha da outra */
+    /* line-height: 10rem; */
+	/* padding top e bottom apenas */
+	padding: 20px 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.cl-margem {
+    /* estabelecemos uma largura "máxima" para o header */
+	/* a largura precisa ser fixa (não pode ser relativa, com % por exemplo), para ele não "espremer" os elementos contidos ao diminuir o tamanho da viewport */
+	max-width: 72rem;
+	/* depois colocamos margem automática nas laterais, assim o elemento fica automaticamente centralizado na horizontal */
+	margin: 0 auto;
+    padding: 0 12px;
+}
+
+.cl-linha {
+    display: inline-block;
+}
+
+.cl-divisor {
+    width: 120%;
+    min-height: 12px;
+    /* o left negativo + a position relative fazem o divisor deslocar-se para a esquerda, fora do elemento pai */
+    left: -10px;
+    position: relative;
+}
+
+.cl-roxo {
+    background-color: rgb(46, 36, 89);
+}
+
 /* ===================================================== */
-/*  NAVBAR
+/*  NAVBAR */
 /* ===================================================== */
 
 nav {
     display: flex;
     /* Faz as colunas se deslocarem para baixo quando o tamanho da viewport fica menor */
     flex-wrap: wrap;
-    height: 80px;
+	/* se usar apenas "height" aqui, quando ocorrer o "wrap", os elementos que se deslocarem para baixo ficarão escondidos atrás do main, pois a altura do nav não vai aumentar */
+    min-height: 80px;
     /* Mantém as colunas centralizadas na horizontal quando o tamanho da viewport fica menor */
     justify-content: center;
 }
@@ -62,7 +119,7 @@ nav {
     flex: 150px;
     justify-content: left;
 	align-items: center;
-    height: inherit;
+    height: 80px;
 	/* Faz as divs de "menu" e "idioma" ficarem com a largura da viewport ao serem 
 	   movidas para as "linhas" de baixo quando diminuimos o tamanho da tela */
 	flex-grow: 8;
@@ -96,6 +153,7 @@ nav {
     /* mantém um afastamento entre os links */
     margin-inline: 1.5em;
 	margin-block: .5em;
+	color: black;
 }
 
 #idioma-dv {
@@ -105,45 +163,93 @@ nav {
     justify-content: center;
     /* centraliza o "select" na vertical e também ajusta o tamanho dele */
     align-items: center;
-    height: inherit;
+	min-height: 40px;
 	/* Faz as divs de "menu" e "idioma" ficarem com a largura da viewport ao serem 
 	   movidas para as "linhas" de baixo quando diminuimos o tamanho da tela */
 	flex-grow: 1;
 }
 
 /* ===================================================== */
-/*  HEADER
+/*  HEADER */
 /* ===================================================== */
 
 header {
-    display: flex;
-    /* Faz as colunas se deslocarem para baixo quando o tamanho da viewport fica menor */
-    flex-wrap: wrap;
-    height: 370px;
-    /* Mantém as colunas centralizadas na horizontal quando o tamanho da viewport fica menor */
-    justify-content: center;
+	/* faz o "comece-dv" (onde está o botão) ir para a direita, já que o flex-direction padrão é "row" */
+	display: flex;
+	background-color: rgb(163, 140, 219);
 }
 
-h1 {
-    font-size: 6rem;
-    font-family: "Alfa Slab One", serif;
-    font-weight: normal;
-    line-height: 10rem;
-}
-
-#apresentacao-h2 {
-    font-size: 2rem;
-    font-weight: normal;
+#apresentacao-hd {
+    padding: 10px 12px 100px;
 }
 
 #apresentacao-dv {
-    flex: 1;
-    padding-left: 390px;
     padding-right: 50px;
-    /* alinha o div na vertical */
-    align-self: center;
+	background-color: rgb(140, 196, 219);
+	/* Faz a div de apresentacao ficar com a largura da viewport ao diminuir o tamanho da tela */
+	flex-grow: 6;
+}
+
+#apresentacao-p {
+    font-size: 2.2rem;
+    font-weight: normal;
 }
 
 #comece-dv {
-    width: 40vw;
+	/* faz a div do botão ocupar todo o espaço restante no header */
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	/* centraliza o link de "versão" */
+	align-items: center;
+	background-color: rgb(219, 140, 157);
+	
+}
+
+#comece-bt {
+    display: table-cell;
+    /* garante que a largura do botão ficará fixa ao reduzir o tamanho da tela */
+    min-width: 350px;
+    /* aumenta a altura do botão e alinha o texto na vertical */
+    line-height: 80px;
+    /* alinha o texto na horizontal */
+    text-align: center;
+	background-color: #ffc832;
+	/* colocamos a borda na mesma cor do background para criar a ilusão de que não existe borda */
+	border: solid #ffc832 1px;
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 1.6rem;
+    /* remove o underline nativo do link */
+    text-decoration: none;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 4px;
+	margin-top: 40px;
+	color: black;
+}
+
+#comece-bt:hover {
+	border-color: black;
+}
+
+#versao-lk {
+	color: #4299bf;
+	font-size: 1.6rem;
+	letter-spacing: .05rem;
+	margin: 20px 0;
+}
+
+/* ===================================================== */
+/*  Session 1: Por que Rust? */
+/* ===================================================== */
+
+#vantagens-sc {
+    background-color: #0b7261;
+    color: white;
+}
+
+#vantagens-dv {
+    display: flex;
 }

@@ -1,3 +1,25 @@
 #logo-dv {
 	justify-content: center;
 }
+
+header {
+	flex-wrap: wrap;
+}
+
+#apresentacao-dv {
+	text-align: center;
+	padding: 10px;
+}
+
+#apresentacao-p {
+	font-size: 1.7rem;
+}
+
+#versao-lk {
+	font-size: 1.2rem;
+}
+
+h1 {
+	font-size: 4rem;
+	line-height: 5rem;
+}

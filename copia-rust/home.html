@@ -14,6 +14,7 @@
     <!-- Atualiza a página a cada 60 segundos -->
     <!-- <meta http-equiv="refresh" content="60"> -->
 	<link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+	<link rel="stylesheet" type="text/css" href="estilos/estilos-tablet.css" media="screen and (max-width: 1024px)">
 	<link rel="stylesheet" type="text/css" href="estilos/estilos-mobile.css" media="screen and (max-width: 700px)">
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
     <!-- imagens SVG mantém a qualidade ao serem redimencionadas a tamanhos muito pequenos, pois elas são compostas de código xml -->
@@ -61,12 +62,47 @@
 			</select>
         </div>
     </nav>
-    <header>
-        <div id="apresentacao-dv">
-            <h1>Rust</h1>
-            <h2 id="apresentacao-h2">Uma linguagem empoderando todos<br> a construir softwares confiáveis e eficientes.</h2>
-        </div>
-        <div id="comece-dv"></div>
-    </header>
+	<main>
+		<header id="apresentacao-hd" class="cl-margem">
+			<div id="apresentacao-dv">
+				<h1>Cópia Rust</h1>
+				<p id="apresentacao-p">Uma linguagem empoderando todos<br> a construir softwares confiáveis e eficientes.</p>
+			</div>
+			<div id="comece-dv">
+				<a id="comece-bt" href="https://www.rust-lang.org/pt-BR/learn/get-started" target="_blank" title="Vá para uma página oficial da linguagem RUST">COMECE AGORA</a>
+				<a id="versao-lk" href="https://blog.rust-lang.org/2023/12/28/Rust-1.75.0.html" target="_blank" title="Vá para uma página oficial da linguagem RUST">Versão 1.75.0</a>
+			</div>
+		</header>
+		<section id="vantagens-sc">
+            <div class="cl-margem">
+                <div class="cl-linha">	
+                    <h2>Por que Rust?</h2>
+                    <div class="cl-divisor cl-roxo"></div>
+                </div>
+                <div id="vantagens-dv">
+                    <div>
+                        <h3>Desempenho</h3>
+                        <p>Rust é extremamente rápido e gerencia memória eficientemente: sem runtime ou garbage collector, podendo potencializar a performance de serviços críticos, rodar em sistemas embarcados, e facilmente integrar-se a outras linguagens.</p>
+                    </div>
+                    <div>
+                        <h3>Confiabilidade</h3>
+                        <p>O rico sistema de tipos de Rust e seu modelo de ownership garantem segurança de memória e segurança de concorrência — e permite que você elimine muitas categorias de erros durante a compilação.</p>
+                    </div>
+                    <div>
+                        <h3>Produtividade</h3>
+                        <p>Rust possui uma ótima documentação, um compilador amigável com mensagens de erros úteis, e ferramental de primeira qualidade — uma ferramenta integrada de compilação e gerenciamento de pacotes, suporte inteligente para múltiplos editores com autocompleção e inspeções de tipos, um formatador automático, e muito mais.</p>
+                    </div>
+                </div>
+            </div>
+		</section>
+	</main>
+
+    <!--<script>
+        // Obtendo o valor da propriedade color do elemento1
+        var larguraElemento = window.getComputedStyle(document.querySelector('#comece-dv')).width;
+
+        // Atribuindo o valor da propriedade color do elemento1 ao elemento2
+        document.querySelector('#comece-bt').style.width = larguraElemento;
+    </script>-->
 </body>
 </html>
