@@ -1,3 +1,29 @@
 #logo-dv {
 	justify-content: center;
 }
+
+#vantagens-dv {
+	flex-direction: column;
+}
+
+#menu-dv {
+	max-width: 55rem;
+}
+
+#comece-bt {
+	min-width: calc(100% - 20px);
+}
+
+header {
+	flex-wrap: wrap;
+}
+
+.cl-divisor-sub {
+	max-width: 100%;
+}
+
+.cl-margem {
+    /* estabelecemos uma largura "máxima" para o header */
+	/* a largura precisa ser fixa (não pode ser relativa, com % por exemplo), para ele não "espremer" os elementos contidos ao diminuir o tamanho da viewport */
+	max-width: 55rem;
+}

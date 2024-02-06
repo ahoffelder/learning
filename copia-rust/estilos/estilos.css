@@ -69,9 +69,21 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 2.3rem;
     font-weight: 800;
     line-height: 1.25;
+}
+
+h3 {
+	font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.25;
+	padding: 25px 0 35px 0;
+}
+
+p {
+	line-height: 1.25;
+	font-size: 1.2rem;
 }
 
 .cl-margem {
@@ -89,7 +101,7 @@ h2 {
 
 .cl-divisor {
     width: 120%;
-    min-height: 12px;
+	min-height: 12px;
     /* o left negativo + a position relative fazem o divisor deslocar-se para a esquerda, fora do elemento pai */
     left: -10px;
     position: relative;
@@ -97,6 +109,10 @@ h2 {
 
 .cl-roxo {
     background-color: rgb(46, 36, 89);
+}
+
+.cl-divisor-sub {
+	max-width: 350px;
 }
 
 /* ===================================================== */
@@ -248,8 +264,16 @@ header {
 #vantagens-sc {
     background-color: #0b7261;
     color: white;
+	min-height: 470px;
+	padding-bottom: 80px;
 }
 
 #vantagens-dv {
     display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+#produtividade-dv {
+	padding-bottom: 30px;
 }
