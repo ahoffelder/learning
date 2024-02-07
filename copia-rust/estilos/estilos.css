@@ -44,7 +44,7 @@ body {
     min-height: 100vh;
 }
 
-div, nav, header, main, footer {
+div, nav, header, main, footer, section {
     /* aplicar borda aos elementos, para melhor visualização durante o desenvolvimento */
     border: solid black 1px;
 }
@@ -107,7 +107,7 @@ p {
     position: relative;
 }
 
-.cl-roxo {
+.cl-bk-roxo {
     background-color: rgb(46, 36, 89);
 }
 
@@ -261,19 +261,33 @@ header {
 /*  Session 1: Por que Rust? */
 /* ===================================================== */
 
-#vantagens-sc {
-    background-color: #0b7261;
-    color: white;
+.cl-section {
 	min-height: 470px;
 	padding-bottom: 80px;
 }
 
-#vantagens-dv {
+.cl-dv-section {
     display: flex;
 	justify-content: space-between;
 	gap: 30px;
 }
 
+.cl-bk-verde {
+    background-color: #0b7261;
+}
+
+.cl-branco {
+    color: white;
+}
+
 #produtividade-dv {
 	padding-bottom: 30px;
+}
+
+.cl-bk-roxo {
+    background-color: #2e2459;
+}
+
+.cl-bk-vermelho {
+    background-color: #a72145;
 }

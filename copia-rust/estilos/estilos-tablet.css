@@ -2,7 +2,7 @@
 	justify-content: center;
 }
 
-#vantagens-dv {
+.cl-dv-section {
 	flex-direction: column;
 }
 
