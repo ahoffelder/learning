@@ -27,7 +27,9 @@
 /* ===================================================== */
 
 /* Usar fontes do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fira+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fira+Sans&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -44,7 +46,7 @@ body {
     min-height: 100vh;
 }
 
-div, nav, header, main, footer, section {
+div, footer, section {
     /* aplicar borda aos elementos, para melhor visualização durante o desenvolvimento */
     border: solid black 1px;
 }
@@ -69,21 +71,26 @@ h1 {
 }
 
 h2 {
-    font-size: 2.3rem;
+    font-size: 2.25rem;
     font-weight: 800;
     line-height: 1.25;
+	letter-spacing: 1px;
 }
 
 h3 {
-	font-size: 2rem;
-    font-weight: 400;
+	font-size: 2.25rem;
+    font-weight: 600;
     line-height: 1.25;
 	padding: 25px 0 35px 0;
 }
 
 p {
-	line-height: 1.25;
-	font-size: 1.2rem;
+	line-height: 1.5;
+	font-size: 1.125rem;
+}
+
+p > a {
+	color: white;
 }
 
 .cl-margem {
@@ -115,6 +122,15 @@ p {
 	max-width: 350px;
 }
 
+.cl-paragrafo {
+	padding: 30px 0;
+}
+
+.cl-construa {
+	text-align: center;
+	font-size: 1.7rem;
+}
+
 /* ===================================================== */
 /*  NAVBAR */
 /* ===================================================== */
@@ -131,7 +147,7 @@ nav {
 
 #logo-dv {
     display: flex;
-    background-color: coral;
+    background-color: white; /* coral; */
     flex: 150px;
     justify-content: left;
 	align-items: center;
@@ -143,7 +159,7 @@ nav {
 
 #logo-dv > a {
 	height: inherit;
-	background-color: darkseagreen;
+	background-color: white;/* darkseagreen; */
     /* fica mais fácil de clicar se aumentamos um pouco a área "clicável" do link */
     line-height: 2em;
 }
@@ -157,7 +173,7 @@ nav {
 #menu-dv {
     display: flex;
     flex-wrap: wrap;
-    background-color: bisque;
+    background-color: white; /* bisque; */
     justify-content: center;
     align-items: center;
 	/* Faz as divs de "menu" e "idioma" ficarem com a largura da viewport ao serem 
@@ -174,7 +190,7 @@ nav {
 
 #idioma-dv {
     display: flex;
-    background-color: aquamarine;
+    background-color: white; /* aquamarine; */
     width: 150px;
     justify-content: center;
     /* centraliza o "select" na vertical e também ajusta o tamanho dele */
@@ -192,7 +208,7 @@ nav {
 header {
 	/* faz o "comece-dv" (onde está o botão) ir para a direita, já que o flex-direction padrão é "row" */
 	display: flex;
-	background-color: rgb(163, 140, 219);
+	background-color: white; /*rgb(163, 140, 219);*/
 }
 
 #apresentacao-hd {
@@ -201,14 +217,15 @@ header {
 
 #apresentacao-dv {
     padding-right: 50px;
-	background-color: rgb(140, 196, 219);
+	background-color: white; /* rgb(140, 196, 219); */
 	/* Faz a div de apresentacao ficar com a largura da viewport ao diminuir o tamanho da tela */
 	flex-grow: 6;
 }
 
 #apresentacao-p {
-    font-size: 2.2rem;
+    font-size: 2.25rem;
     font-weight: normal;
+	line-height: 1.25;
 }
 
 #comece-dv {
@@ -218,7 +235,7 @@ header {
 	flex-direction: column;
 	/* centraliza o link de "versão" */
 	align-items: center;
-	background-color: rgb(219, 140, 157);
+	background-color: white; /*rgb(219, 140, 157);*/
 	
 }
 
